@@ -12,6 +12,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        cinematografica: ['Cinematografica', 'sans-serif'],
+        cairo: ['Cairo', 'sans-serif'],
+        milanello: ['Milanello', 'sans-serif'],
+      },
     },
   },
   plugins: [],
