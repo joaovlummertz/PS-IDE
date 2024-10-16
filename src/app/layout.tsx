@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { Cairo } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/Navbar";
+import background from "../../public/background.png"
+
 
 const cinematografica = localFont({
   src: "./fonts/Cinematografica.ttf"
@@ -30,7 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${cairo.className}`}
+        className={`antialiased ${cairo.className} w-full h-full bg-cover bg-center bg-no-repeat object-cover`}
+        style={{
+          backgroundImage: `url(${background.src})`
+        }}
       >
         <Navbar />
         {children}
