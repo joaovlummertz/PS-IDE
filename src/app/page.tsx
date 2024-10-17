@@ -1,4 +1,5 @@
 import Header from "./_components/Header";
+import Killers from "./_components/Killers";
 
 export default function Home() {
   return (
@@ -9,9 +10,7 @@ export default function Home() {
         <h2 className="text-white">Filmes em cartaz</h2>
       </section>
 
-      <section id="icons" className="min-h-[80vh]">
-        <h2 className="text-white">Os ícones do terror</h2>
-      </section>
+      <Killers />
 
       <section id="tickets" className="min-h-[80vh]">
        <h2 className="text-white">Comprar ingresso</h2>

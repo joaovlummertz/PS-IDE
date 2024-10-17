@@ -8,7 +8,7 @@ export default function Navbar() {
             <div className="h-full text-white flex justify-center items-center gap-20">
                 <Link href="#">HOME</Link>
                 <Link href="#movies">CATALOGO</Link>
-                <Link href="#icons">ASSASSINOS</Link>
+                <Link href="#killers">ASSASSINOS</Link>
                 <Link href="#tickets">INGRESSOS</Link>
             </div>
         </nav>
