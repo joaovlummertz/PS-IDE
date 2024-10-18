@@ -1,35 +1,23 @@
-import Image from "next/image";
-import banner from "../../public/banner.png"
-import background from "../../public/background.png"
+import Header from "./_components/Header";
+import Movies from "./_components/Movies";
+import Killers from "./_components/Killers";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
-    <body className="w-full h-full bg-[url('../../public/background.png')] bg-cover bg-center">
-      <header className="relative w-full h-[90vh]">
-        <Image
-            className="dark:invert opacity"
-            src={banner}
-            alt="Banner"
-            objectFit="cover"
-            objectPosition="bottom"
-            layout="fill"
-            priority
-          />
+    <>
+      <Header />
 
-          <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-      </header>
+      <Movies />
 
-      <section className="min-h-[80vh]">
-        <h2 className="text-white">Filmes em cartaz</h2>
-      </section>
+      <Killers />
 
-      <section className="min-h-[80vh]">
-        <h2 className="text-white">Os ícones do terror</h2>
-      </section>
-
-      <section className="min-h-[80vh]">
+      <section id="tickets" className="min-h-[80vh]">
        <h2 className="text-white">Comprar ingresso</h2>
       </section>
-    </body>
+
+      <Footer />
+    </>
   );
+    
 }
