@@ -1,4 +1,3 @@
-import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -6,17 +5,20 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/components/[object Object].js"
   ],
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        orange: "#D45827",
+      },
+      fontFamily: {
+        cinematografica: ['Cinematografica', 'sans-serif'],
+        cairo: ['Cairo', 'sans-serif'],
+        milanello: ['Milanello', 'sans-serif'],
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [],
 };
 export default config;
