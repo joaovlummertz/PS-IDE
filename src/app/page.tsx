@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
 
-      <section id="movies" className="min-h-[80vh]">
+      <section id="movies" className="min-h-[80vh] w-[80%] mx-auto py-16 scroll-mt-[150px]">
            <Movies />
       </section>
 

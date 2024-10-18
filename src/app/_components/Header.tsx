@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="relative w-full h-[90vh]">
             <Image
-                className="dark:invert opacity"
+                className="opacity"
                 src={banner}
                 alt="Banner"
                 objectFit="cover"

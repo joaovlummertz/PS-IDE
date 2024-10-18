@@ -49,7 +49,7 @@ export default function Killers() {
     }
 
     return (
-        <section id="killers" className="min-h-[80vh] w-[80%] mx-auto scroll-mt-[180px]">
+        <section id="killers" className="min-h-[80vh] w-[80%] mx-auto scroll-mt-[150px] my-16">
             <h2 className="text-white font-milanello uppercase text-5xl">Os ícones do terror</h2>
             <div className="flex flex-wrap justify-between py-12">
                 {Object.keys(killers).map((k) => {
@@ -70,9 +70,8 @@ export default function Killers() {
                     </p>
                 </div>
                 <Image
-                    className="dark:invert"
                     src={killers[selectedKiller].image}
-                    height={500}
+                    height={400}
                     alt="Assassin image"
                     priority
                 />

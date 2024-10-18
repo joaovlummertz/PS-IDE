@@ -1,8 +1,10 @@
+"use client"
+
 export default function Movies() {
     return (
     <div className="filmes">
 
-    <h1>FILMES EM CARTAZ</h1>
+    <h1 className="font-milanello uppercase text-5xl pb-12">FILMES EM CARTAZ</h1>
 
     <div className="container">
 
@@ -13,6 +15,13 @@ export default function Movies() {
         />
         </div>
       
+        <div className = "image">
+        <img
+          src="/Filme2.png"        
+          alt="Poster de Filme"
+        />
+        </div>
+
       <div className = "image">
         <img
           src="/Filme3.png"        
@@ -123,63 +132,28 @@ export default function Movies() {
 
     <style jsx>{`
      h1 {
-      position: relative;
-      font-family: bevan;
-      font-size: 75px;
-      font-weight: 400;
-      line-height: 55.33px;
-      text-align: left;
       width: auto;
-      height: 55px;
       gap: 0px;
-      left: 100px;
-      top: 50px;
       color: white
      }
 
-
-      h2 {
-
-      font-family: bevan;
-      font-size: 25px;
-      font-weight: 400;
-      line-height: 55.33px;
-      text-align: left;
-      width: auto;
-      height: 55px;
-      gap: 0px;
-        text-align: center;
-     }
-    
      .container
         {
-        position: relative;
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 100px;
-        width: 90%;
-        top: 150px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 50px;
         margin: 0 auto;
         }
       
       .image{
-        width: 120%;
         height: auto;
         display: block;
         text-align: center;
       }
-      
-      .filmes {
-        background-image: url("/background.png");
-        background-attachment: scroll;
-        background-repeat: repeat-y;
-        }
-
-      
         
       .image img:hover {
-        transform: scale(1.2);
+        transform: scale(1.15);
         transition:transform 0.3s ease-in-out;
 
     }

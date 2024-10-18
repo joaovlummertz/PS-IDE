@@ -30,9 +30,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`antialiased ${cairo.className} w-full h-full bg-cover bg-center bg-no-repeat object-cover`}
+        className={`antialiased ${cairo.className} w-full h-full bg-cover bg-center bg-repeat-y object-cover`}
         style={{
           backgroundImage: `url(${background.src})`
         }}
