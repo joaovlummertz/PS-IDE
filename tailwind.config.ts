@@ -15,6 +15,11 @@ const config: Config = {
         foreground: "var(--foreground)",
         orange: "#D45827",
       },
+      fontFamily: {
+        cinematografica: ['Cinematografica', 'sans-serif'],
+        cairo: ['Cairo', 'sans-serif'],
+        milanello: ['Milanello', 'sans-serif'],
+      },
     },
   },
   plugins: [nextui()],
