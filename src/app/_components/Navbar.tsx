@@ -22,7 +22,7 @@ export default function Navbar() {
             </div>
 
             <div className="md:hidden flex justify-center items-center m-auto">
-                <Hamburger label="Mostrar menu de navegação" size={48} toggled={isOpen} toggle={setIsOpen} />
+                <Hamburger label="Mostrar menu de navegação" size={48} toggled={isOpen} toggle={setIsOpen} color="white" />
             </div>
 
             {isOpen && (
