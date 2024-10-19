@@ -51,7 +51,7 @@ export default function Killers() {
     return (
         <section id="killers" className="min-h-[80vh] w-[80%] mx-auto scroll-mt-[150px] my-16">
             <h2 className="text-white font-milanello uppercase text-5xl">Os ícones do terror</h2>
-            <div className="flex flex-wrap justify-between py-12">
+            <div className="flex flex-wrap justify-center gap-4 lg:justify-between py-12">
                 {Object.keys(killers).map((k) => {
                     if (k === selectedKiller) {
                         return <span className="font-milanello text-2xl uppercase justify-between cursor-pointer text-black bg-white py-1 px-3 rounded-md" key={k}>{k}</span>;
@@ -62,7 +62,7 @@ export default function Killers() {
                     }
                 })}
             </div>
-            <div className="flex flex-row gap-8">
+            <div className="flex flex-col-reverse gap-8 lg:flex-row">
                 <div className="text-white">
                     <h3 className="text-4xl font-milanello py-4 capitalize">{selectedKiller}</h3>
                     <p className="text-3xl font-light font-sans leading-[3rem]">
@@ -71,6 +71,7 @@ export default function Killers() {
                 </div>
                 <Image
                     src={killers[selectedKiller].image}
+                    className="object-contain mx-auto"
                     height={400}
                     alt="Assassin image"
                     priority
